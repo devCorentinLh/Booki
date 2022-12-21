@@ -49,8 +49,7 @@ h3 {
 a h3 {font-size: 80%;}
 /*HEAD*/
 .link__head {
-  text-transform: uppercase;
-  font-variant-caps: small-caps;
+
 position: relative;
 right: 0%;
 top: -150px;
