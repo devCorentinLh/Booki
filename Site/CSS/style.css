@@ -1,4 +1,4 @@
-/*NORMES*/
+/* NORMES */
 
 body {
   width: 100%;
@@ -30,34 +30,70 @@ h3 {
   padding: 2px 2px 2px 2px; 
   margin:0px;}
 
-a {text-decoration: none; color: #000000;} /*COULEUR LIENS*/
+a {
+  text-decoration: none;
+  color: #000000;} 
 
-.fa-solid {color: #0065FC;} /*COULEUR ICONES*/
+/* COULEUR ICONES */
+.fa-solid {color: #0065FC;} 
+
+/* ETOILES VIDE */
+#vide, #vide1, #vide2, #vide3, #vide4, #vide5, #vide6, #vide7, #vide8 {
+  color: grey;
+  opacity: 0.2;}
  
-  /*NAV*/
-nav{
+/* GESTION DES BLOCS DE CONTENUE PRINCIPAL */
+.content__top {
+  height: 626px;
+  display: flex;
+  width: 65%; }
+
+.aside {
+  display: flex;
+  height: 626px;
+  width: 30%; }
+
+.content__middle {
+  width:100%;
+  height: 626px;  
+  display: flex; 
+  justify-content: space-around;
+  margin:0px;
+  padding: 0px 0px 0px 0px;}
+
+.content__bottom {  
   width: 100%;
+  height: 626px;
+  display: flex;
+  padding:10px 0px 0px 0px;
+  flex-direction: column; }
+
+/* NAV */
+nav{
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;}
+  justify-content: space-between;
+  width: 100%;
+  margin: 0px;
+  padding: 0px 0px 0px 0px;}
 
 .link__head {display: flex;}
 
 .link__a,.link__h {
-  padding:15px;
+  padding:10px 0px 0px 20px;
   border-top: 3px solid transparent; }
 
-  .link__h:hover, .link__a:hover {border-top: 5px solid #0065FC;}
+.link__h:hover, .link__a:hover {border-top: 5px solid #0065FC;}
 
-  .Logo { 
+.Logo { 
   width: 61px;
   height: 19px;
   margin: 44px; }
 
-/* recherche */
-
+/* TEXTE ET BARRE RECHERCHE */
 .nav__text {
-  padding: 10px;}
+  width: 90%;
+  padding: 10px 10px 10px 0px;}
 
 .recherche{
   width:332px;
@@ -98,7 +134,9 @@ nav{
   padding:0px 0px 0px 10px;
   border: none; }
 
-.recherche__bar::placeholder{ color: black; font-weight: bolder; }
+.recherche__bar::placeholder{ 
+  color: black; 
+  font-weight: bolder; }
 
 .fa-solid.fa-location-dot {
   color: #000000; 
@@ -107,34 +145,34 @@ nav{
   height: 14px;
   margin: 10px; }
 
-/*FILTRES*/
+/* FILTRES */
 .titre__f {
   display: flex;
   align-items: center;
-  height: 16px;}
+  height: 16px;
+  padding-left: 10px;}
 
 .filtre { 
+  display: flex;
+  flex-flow: row wrap;
   font-size: 20px;
   width: 100%;
   height: 75px;
   max-width: 914px;
   border-radius: 20px;
-  display: flex;
-  flex-flow: row wrap;
   align-items:center;
   justify-content: space-around;
-  padding: 0px 0px 0px 10px; }
+  padding: 0px 0px 0px 0px; }
 
 .bouton {
   display: flex;
   width: auto;
   height: 40px;
-  margin:auto;
+  margin: auto;
   flex-flow: row;
-  background-color: #ffffff;
   align-items:center;
   padding: 0px 10px 0px 10px;
-    border: 2px solid #D9D9D9;
+  border: 2px solid #D9D9D9;
   border-radius: 20px; }
 
 .button__logo {
@@ -146,63 +184,88 @@ nav{
 
 .bouton:hover {background-color: #DEEBFF;}
 
-/*Plus de 500 logements*/
+/* INFO PLUS DE 500 LOGEMENTS */
 .info {
   display: flex;
   align-items: center;
-  width: 100%;
   height: 25px;
-  padding: 2%;
-  margin-top: 7px; }
+  padding: 10px;
+  margin: 0px ;}
 
 .fa-solid.fa-info {
-    display: flex;
-    width: auto;
-    height: 9px;
-    align-items: center;
-    border:  2px solid #D9D9D9;
-    border-radius:  50%;
-    padding: 7px; }
+  display: flex;
+  width: auto;
+  height: 9px;
+  align-items: center;
+  border:  2px solid #D9D9D9;
+  border-radius:  50%;
+  padding: 7px; }
 
 #info__text {
    padding: 0px 0px 0px 10px; }
 
-/* Sections */
-.content__top {
-  height: 626px;
-  display: flex;
-  width: 65%; }
+/* HEBERGEMENTS A MARSEILLE */
+.titre__h13 {
+  width: 90%; 
+  margin-left: 7px;}
 
-.aside {
-  display: flex;
-  height: 626px;
-  width: 30%; }
-
- .content__middle {
-  width:100%;
-  height: 626px;  
-  display: flex; 
-  justify-content: space-around;}
-
-.content__bottom {  
+.img__hebergement__13{
+  height: 119px;
   width: 100%;
-  height: 626px;
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;}
+
+.card__h13 {
   display: flex;
-  padding:10px 0px 0px 0px;
-  flex-direction: column; }
+  flex-flow: column wrap;
+  justify-content: space-around;
+  height: 199px;
+  width: 28%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 4px;}
 
-#vide, #vide1, #vide2, #vide3, #vide4, #vide5, #vide6, #vide7, #vide8 {
-  color: grey;
-  opacity: 0.2;}
+.hebergement__13 {
+  flex-direction: column;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:space-around;
+  height: 626px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  background:#F2F2F2;
+  border-radius: 20px;}
 
-/*Hébergement tendances*/
+.card__h13:hover {box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);}
+
+.container__13 {
+  display: flex;
+  flex-flow: column;
+  height: 75px;
+  width: 100%;
+  padding: 0px;
+  justify-content:center;}
+
+.container__13 h2 {
+  font-size: 93%;}
+
+.container__13 h3 {
+  font-size: 70%;}
+
+#ap {
+  width: 100%;
+  height: 40px;
+  margin-left: 7px;}
+
+/* HEBERGEMENT LES PLUS POPULAIRES */
 .titre__top {
   display: flex;
   justify-content: space-around;
   align-items:baseline;
   width: 80%;
   height: 50px;
-  padding: 10px 20px 0px 20px; }
+  padding: 0px 0px 0px 0px; }
 
 .icon__top {
   width: 16px;
@@ -218,14 +281,13 @@ nav{
   display: flex;
   flex-flow: column wrap;
   justify-content:space-between;
-  height: 144px;
-  width: 100%;
+  height: 130px;
+  width: 60%;
   padding: 7px 1px 7px 7px;}
 
 .text__top {
   display: flex;
-  flex-flow:row wrap;
-  width: 55%;}
+  flex-flow:row wrap;}
 
 .hebergement__top {
   display: flex;
@@ -237,9 +299,12 @@ nav{
   height: 626px;
   background-color: #F2F2F2;}
 
-.container__top h2 {width: 100%;font-size: 93%;}
+.container__top h2 {
+  width: 90%;
+  font-size: 93%;}
 
-.container__top h3 {font-size: 70%;}
+.container__top h3 {
+  font-size: 70%;}
 
 .link__card__2 { 
   display: flex;
@@ -259,57 +324,9 @@ nav{
 
 .card__tendance:hover { box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);  }
 
-    /*Hébergement à marseille*/
-.titre__h13 {width: 100%; margin-left: 7px;}
-
-.img__hebergement__13{
-  height: 119px;
-  width: 100%;
-  border-radius: 20px 20px 0px 0px;
-  object-fit: cover;}
-
-.card__h13 {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-around;
-  height: 199px;
-  width: 28%;
-  background-color: rgb(255, 255, 255);
-  border-radius: 20px;
-  padding: 4px;}
-
-.hebergement__13 {flex-direction: column;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content:space-around;
-  height: 626px;
-  width: 100%;
-  margin: 7px;
-  background:#F2F2F2;
-  border-radius: 20px;}
-
-.card__h13:hover { box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);}
-
-.container__13 {
-  display: flex;
-  flex-flow: column;
-  height: 75px;
-  width: 100%;
-  padding: 0px;
-  justify-content:center;}
-
-.container__13 h2 {font-size: 93%;}
-
-.container__13 h3 {font-size: 70%;}
-
-#ap {
-  width: 100%;
-  height: 40px;
-  margin-left: 7px;}
-
   /* ACTIVITES*/  
 .titre__act { 
-  width: 100%; 
+  width: 90%; 
   padding: 0px 0px 0px 20px;}
 
 .img__act {
@@ -319,11 +336,11 @@ nav{
   border-radius: 20px 20px 0px 0px; } 
 
 .activites {
+  display: flex;
   height: 493px;
   width: 100%;
   border-radius: 0px;
   flex-flow: row wrap;
-  display: flex;
   justify-content: space-around;}
 
 .card__activites {
@@ -367,7 +384,7 @@ footer h3 {padding: 0px 0px 12px 0px;}
   padding: 20px 0 0 20px;
   flex-direction: row; }
 
- /*Version tablette*/
+/* SITE VERSION TABLETTE */
 @media screen and (max-width:992px) {
 .img__act {height:211px;}
 
@@ -384,22 +401,26 @@ footer h3 {padding: 0px 0px 12px 0px;}
 
 .titre__top{width: 100%;}
 
-.content__middle {flex-direction: column;
+.content__middle {
+  flex-direction: column;
   height: 969px;
   width: 100%;}
 
 .content__top{width: 100%;}
 
-.aside{width: 100%;margin-top: 30px;}
+.aside{
+  width: 100%;
+  margin-top: 30px;}
 
 .content__bottom {height: 400px;}
 
-.container__act h2 {display: flex;
+.container__act h2 {
+  display: flex;
   flex-flow:  wrap;
   width: 90%;}
 }
 
-/*Version mobile*/
+/* SITE VERSION MOBILE */
 @media screen and (max-width:768px) {
 .bouton__recherche { display: none;}
 
@@ -490,7 +511,10 @@ footer h3 {padding: 0px 0px 12px 0px;}
 
 .recherche__bar {width: 70%;}
 
-.hebergement__top {width: 100%; border-radius: 0px;}
+.hebergement__top {
+  width: 100%; 
+  border-radius: 0px;
+  margin:0px;}
 
 .Logo {margin-left: 45%;}
 
