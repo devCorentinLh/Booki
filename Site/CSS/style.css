@@ -125,7 +125,8 @@ margin: 10px; }
   align-items: center;
   width: 100%;
   height: 25px;
-  padding: 2%; }
+  padding: 2%;
+margin-top: 7px; }
 .fa-solid.fa-info {
     display: flex;
     width: auto;
@@ -320,22 +321,34 @@ width: 90%;}
 @media screen and (max-width:768px) {
    .bouton__recherche { display: none;}
    .fa-solid.fa-magnifying-glass { display: flex; width: 25%;}
-   .link__head { width: 100%;  }
+   .link__head { width: 100%;    }
     .link__head a {
     flex-basis: 50%;
     text-align: center;
     border-bottom: 3px solid #f2f2f2;
-    padding: 0px 0px 10px 0px; }
+    padding: 0px 0px 10px 0px;
+  }
   .link__head a:hover { border-bottom-color: #0065fc;border-top-color: transparent; }
   .titre__f{width: 100%;}
  .filtre { flex-flow: row wrap; flex-direction: row ; justify-content:flex-end;height: fit-content;align-items: center;}
-.card__h13{  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);  transition: 0.3s;  }
-  .card__activites {  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);  height: 255px;  }
+.card__h13{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  }
+  .card__activites {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  height: 255px;
+  }
   .aside{order:-1;}
-  .hebergement__top {flex-flow: column;  height: 580px;width: 100%;}
+  .hebergement__top {flex-flow: column;
+  height: 580px;
+width: 100%;}
   .card__tendance {width: 90%;overflow: hidden;}
   .card__h13 {width: 90%;}
-  .content__middle { height: 2160px; justify-content: flex-start; }
+  .content__middle {
+    height: 2160px;
+    justify-content: flex-start;
+  }
   .hebergement__13{
   flex-flow: column;
 justify-content: space-around;
@@ -344,10 +357,13 @@ width: 100%;
 height: 1488px;
 background-color: rgb(255, 255, 255);}
 #ap {display: none;}
-.activites{flex-direction: column; height: 1200px;}
+.activites{flex-direction: column;
+height: 1200px;}
 .card__activites{width: 90%;margin-left: 5%;}
-.container__act {justify-content:center; padding:7px;}
-.content__bottom{width: 100%;  height: 1200px;}
+.container__act {justify-content:center;
+padding:7px;}
+.content__bottom{width: 100%;
+  height: 1200px;}
 footer{
   width:100%;
   height: 501px;
@@ -362,4 +378,5 @@ footer h3 {padding: 0px 0px 12px 0px;}
 .recherche__bar {width: 70%;}
 .hebergement__top {width: 100%; border-radius: 0px;}
 .Logo {margin-left: 45%;}
+
 }
